@@ -22,7 +22,7 @@ router.post(
 );
 
 router.post(
-  '/',
+  '/login',
   [
     check('email', 'El email no es obligatorio').isEmail(),
     check('password', 'El password debe tener mas de 6 caracteres').isLength({ min: 6 }),
