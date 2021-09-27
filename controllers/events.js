@@ -47,7 +47,7 @@ const actualizarEvento = async (req, res = response) => {
     if (!eventoId) {
       return res.status(400).json({
         ok: false,
-        ms: 'No se envió el id del evento',
+        msg: 'No se envió el id del evento',
       });
     }
 
